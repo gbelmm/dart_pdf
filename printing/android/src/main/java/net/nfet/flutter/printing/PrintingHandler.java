@@ -86,8 +86,7 @@ public class PrintingHandler implements MethodChannel.MethodCallHandler {
                                     Double.valueOf(width * 1000.0 / 72.0).intValue(),
                                     Double.valueOf(height * 1000.0 / 72.0).intValue());
 
-                    printJob.convertHtml((String) call.argument("html"), size, margins,
-                            (String) call.argument("baseUrl"));
+                     
                     result.success(1);
                     break;
                 }
